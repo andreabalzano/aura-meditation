@@ -16,6 +16,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
  }
 
  h1 {
