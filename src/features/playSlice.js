@@ -1,8 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    isPlaying: false
-}
+const initialState = { isPlaying: false }
 
 export const playSlice = createSlice({
     name: 'playStatus',
