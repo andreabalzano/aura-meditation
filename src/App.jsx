@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { app, container } from './assets/styles/App.module.css'
-import Timer from './features/Timer'
-import PlayStopbtn from './features/PlayStopbtn'
-import TimeSelect from './features/TimeSelect'
+import Timer from './features/timer/Timer'
+import PlayStopbtn from './components/PlayStopbtn'
+import TimeSelect from './components/TimeSelect'
 
 
 
@@ -17,6 +17,7 @@ function App() {
         <PlayStopbtn />
       </div>
       <TimeSelect />
+
     </div>
   )
 }

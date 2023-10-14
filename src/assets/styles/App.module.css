@@ -1,6 +1,6 @@
 .app {
     width: 50%;
-    height: 70%;
+    height: 90vh;
     max-height: 775px;
     max-width: 1095px;
     border-radius: 50px;
@@ -23,6 +23,12 @@
     position: relative;
 }
 
+@media only screen and (max-width: 1024px) {
+    .app {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .app {
         width: 100%;
@@ -30,6 +36,5 @@
         max-height: none;
         border-radius: 0px;
         background-color: #fff;
-        /* background-image: url("/src/assets/img/background-mobile.png"); */
     }
 }

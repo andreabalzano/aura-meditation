@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import playSlice from "../features/playSlice";
-import setTime from "../features/timerSlice"
+import setTime from "../features/timer/timerSlice"
 
 export const store = configureStore({
     reducer: {
-        play: playSlice,
         changeTime: setTime,
     }
 })

@@ -1,7 +1,7 @@
 import react from "react";
 import { playStopbtn, disabled } from "../assets/styles/PlayStopbtn.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { startTimer } from "./timerSlice"
+import { startTimer } from "../features/timer/timerSlice"
 
 
 export default function PlayStopbtn() {

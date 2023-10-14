@@ -6,8 +6,12 @@ section {
     align-items: center;
 }
 
+section>p {
+    margin-bottom: 1rem;
+}
+
 .coontainer {
-    width: 80%;
+    width: 90%;
     height: 3rem;
     display: flex;
     justify-content: space-around;
@@ -15,7 +19,7 @@ section {
 }
 
 .timeBtn {
-    width: 7rem;
+    width: 6rem;
     height: 2.1rem;
     border-radius: 50px;
     border: 2px #b8c4d8 solid;
@@ -29,7 +33,7 @@ section {
 }
 
 .selected {
-    width: 7rem;
+    width: 6rem;
     height: 2.1rem;
     border-radius: 50px;
     border: none;
@@ -42,7 +46,7 @@ section {
 }
 
 .disabled {
-    width: 7rem;
+    width: 6rem;
     height: 2.1rem;
     border-radius: 50px;
     border: 2px #b8c4d8 solid;
@@ -60,7 +64,7 @@ section {
     }
 
     .coontainer {
-        width: 50%;
+        width: 90%;
         height: auto;
         display: inline-block;
     }

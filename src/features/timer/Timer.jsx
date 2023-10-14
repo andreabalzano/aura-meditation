@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { timer } from "../assets/styles/Timer.module.css";
+import { timer } from "../../assets/styles/Timer.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseSeconds, stopTimer, resetSeconds } from "./timerSlice"
 
