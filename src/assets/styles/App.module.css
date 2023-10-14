@@ -4,11 +4,6 @@
     max-height: 775px;
     max-width: 1095px;
     border-radius: 50px;
-    /* background-color: #fff;
-    background-image: url("/src/assets/img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
-    /* background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -34,6 +29,7 @@
         height: 100vh;
         max-height: none;
         border-radius: 0px;
-        background-image: url("/src/assets/img/background-mobile.png");
+        background-color: #fff;
+        /* background-image: url("/src/assets/img/background-mobile.png"); */
     }
 }

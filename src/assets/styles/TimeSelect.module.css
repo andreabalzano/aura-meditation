@@ -14,7 +14,7 @@ section {
     align-items: center;
 }
 
-.coontainer>button {
+.timeBtn {
     width: 7rem;
     height: 2.1rem;
     border-radius: 50px;
@@ -24,11 +24,48 @@ section {
     color: #b8c4d8;
     letter-spacing: .7px;
     cursor: pointer;
+    transition: 1s;
+
 }
 
 .selected {
+    width: 7rem;
+    height: 2.1rem;
+    border-radius: 50px;
     border: none;
+    font-size: 16px;
+    letter-spacing: .7px;
+    cursor: default;
     background: linear-gradient(270deg, #f3e7e9, #b8c4d8);
     color: #fff;
-    transition: .7s;
+    transition: 1s;
+}
+
+.disabled {
+    width: 7rem;
+    height: 2.1rem;
+    border-radius: 50px;
+    border: 2px #b8c4d8 solid;
+    font-size: 16px;
+    letter-spacing: .7px;
+    background-color: #dbd3db;
+    color: #c6bdc7;
+    cursor: default;
+    transition: 1.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        text-align: center;
+    }
+
+    .coontainer {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .coontainer>button {
+        margin: .5rem .25rem;
+    }
 }

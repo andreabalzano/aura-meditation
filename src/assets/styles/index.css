@@ -35,6 +35,11 @@
  /*mobile*/
  @media only screen and (max-width: 768px) {
      h1 {
-         font-size: 60px;
+         font-size: 40px;
+     }
+
+     h2,
+     h3 {
+         font-size: 25px;
      }
  }
