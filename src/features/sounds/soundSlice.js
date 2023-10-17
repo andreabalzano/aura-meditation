@@ -22,12 +22,12 @@ const setSound = createSlice({
         playStopSound: (state) => {
             state.isPlaying = !state.isPlaying
         },
-        previewSound: (state) => {
-            state.preview = !state.preview
+        clearAll: () => {
+            return initialState
         }
     },
 })
 
 
-export const { fetchSound, updateUrl, playStopSound, previewSound } = setSound.actions
+export const { fetchSound, updateUrl, playStopSound, clearAll } = setSound.actions
 export default setSound.reducer

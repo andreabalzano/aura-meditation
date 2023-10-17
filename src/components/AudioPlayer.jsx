@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { btn, selected, disabled, btnDisabled } from "../assets/styles/SoundSelect.module.css"
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchSound, updateUrl } from "../features/sounds/soundSlice"
+import { fetchSound, updateUrl, clearAll } from "../features/sounds/soundSlice"
 
 export default function AudioPlayer(props) {
     const soundId = useSelector((state) => state.changeSound.id)
@@ -33,8 +33,13 @@ export default function AudioPlayer(props) {
     }, [audioUrl])
 
     useEffect(() => {
-        audioRef.current.loop = true
-        timerPlaying ? audioRef.current.play() : audioRef.current.pause()
+        if (timerPlaying) {
+            audioRef.current.loop = true
+            audioRef.current.play()
+        } else {
+            audioRef.current.pause()
+            dispatch(clearAll())
+        }
     }, [timerPlaying])
 
     if (timerPlaying) {
