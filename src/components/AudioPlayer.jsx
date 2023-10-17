@@ -35,7 +35,9 @@ export default function AudioPlayer(props) {
     useEffect(() => {
         if (timerPlaying) {
             audioRef.current.loop = true
-            audioRef.current.play()
+            audioRef.current.currentTime = 0
+            setTimeout(() => { audioRef.current.play() }, 3000)
+            // audioRef.current.play()
         } else {
             audioRef.current.pause()
             dispatch(clearAll())
