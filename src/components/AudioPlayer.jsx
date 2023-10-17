@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import { btn, selected } from "../assets/styles/SoundSelect.module.css"
+import { btn, selected, disabled, btnDisabled } from "../assets/styles/SoundSelect.module.css"
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSound, updateUrl } from "../features/sounds/soundSlice"
@@ -37,17 +37,32 @@ export default function AudioPlayer(props) {
         timerPlaying ? audioRef.current.play() : audioRef.current.pause()
     }, [timerPlaying])
 
-    return (
-        <li className={soundId == props.id ? selected : undefined}>
-            <img
-                className={btn}
-                src={props.image}
-                onClick={() => dispatch(fetchSound(props.id))}
-            />
-            <audio
-                ref={audioRef}
-                src={audioUrl}
-            />
-        </li>
-    )
+    if (timerPlaying) {
+        return (
+            <li className={soundId == props.id ? selected : disabled}>
+                <img
+                    className={btnDisabled}
+                    src={props.image}
+                />
+                <audio
+                    ref={audioRef}
+                    src={audioUrl}
+                />
+            </li>
+        )
+    } else {
+        return (
+            <li className={soundId == props.id ? selected : undefined}>
+                <img
+                    className={btn}
+                    src={props.image}
+                    onClick={() => dispatch(fetchSound(props.id))}
+                />
+                <audio
+                    ref={audioRef}
+                    src={audioUrl}
+                />
+            </li>
+        )
+    }
 }

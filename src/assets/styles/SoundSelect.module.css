@@ -4,6 +4,12 @@
     cursor: pointer;
 }
 
+.btnDisabled {
+    width: 3rem;
+    height: 3rem;
+    cursor: default;
+}
+
 li {
     list-style: none;
     width: 5rem;
@@ -16,10 +22,14 @@ li {
 }
 
 .selected {
-    border: 1px #b8c4d8 solid;
     border-radius: 50px;
     background: linear-gradient(106deg, #e3eeff, #f3e7e9, #b8c4d8);
     background-size: 250% 250%;
+    transition: 1s;
+}
+
+.disabled {
+    background-color: #dbd3db;
     transition: 1s;
 }
 
