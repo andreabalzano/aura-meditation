@@ -1,0 +1,32 @@
+.btn {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.selected {
+    border: 1px #b8c4d8 solid;
+    border-radius: 50px;
+    background: linear-gradient(106deg, #e3eeff, #f3e7e9, #b8c4d8);
+    background-size: 250% 250%;
+    transition: 1s;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

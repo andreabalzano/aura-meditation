@@ -3,6 +3,7 @@ import { app, container } from './assets/styles/App.module.css'
 import Timer from './features/timer/Timer'
 import PlayStopbtn from './components/PlayStopbtn'
 import TimeSelect from './components/TimeSelect'
+import SoundSelect from './components/SoundSelect'
 
 
 
@@ -17,7 +18,7 @@ function App() {
         <PlayStopbtn />
       </div>
       <TimeSelect />
-
+      <SoundSelect />
     </div>
   )
 }
